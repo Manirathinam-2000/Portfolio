@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <link rel="shortcut icon" href="images/MR_favicon.ico">
 
@@ -19,26 +19,90 @@
 </head>
 
 <body>
+
+  <!-- Navbar -->
+
+  <nav class="n-box-shadow navbar navbar-expand-md bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand d-md-none" href="#">
+        <h3>MR</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <div class="">
+            <a class="nav-link" href="#">Web Development</a>
+          </div>
+          <div class="n2">
+            <a class="nav-link" href="#">Graphic Design</a>
+          </div>
+          <a class="d-none d-md-block" id="nav-MR" href="#">
+            <h3>MR</h3>
+          </a>
+          <div class="n2">
+            <a class="nav-link" href="#">UI & Visual Deisgn</a>
+          </div>
+          <div class="">
+            <a class="nav-link" href="#">3D & More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 1 -->
+
   <div class="section1">
-    <div class="heading1 container-md">
-      <h1>Hey!</h1>
-    </div>
-    <div class="row justify-content-center">
-    <div class="heading1 col-4">
-      <h1 id="this-is">This is</h1>
-    </div>
-    <div class="heading1 col-4">
-      <h1 id="MR"> Manirathinam</h1>
-    </div>
-  </div>
-    <div class="heading1 container-md">
-      <h1>- a Designer and a Developer.</h1>
-    </div>
-    <div class="container-md" id="navigation-hint">
-      <h1>Scroll down further or navigate using the taskbar to look at my portfolio!</h1>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-md align-self-center">
+          <div class="heading1">
+            <h1>Hey!</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="heading1 col-4">
+              <h1 id="this-is">This is</h1>
+            </div>
+            <div class="heading1 col-4">
+              <h1 id="MR"> Manirathinam</h1>
+            </div>
+          </div>
+          <div class="heading1">
+            <h2>- a Designer and a Developer.</h2>
+          </div>
+        </div>
+        <div class="col-md">
+          <img class="landing-img" src="images/MR_landing_img.png" alt="">
+        </div>
+      </div>
     </div>
   </div>
 
+  <!-- Section 2 -->
+
+  <div class="row">
+    <div class="section2-row container col-md mx-auto">
+      <h2 class="skill-title" id="GD">Graphic Design</h2>
+      <img class="BG-img" src="images/GD_BG.png" alt="">
+    </div>
+    <div class="section2-row container col-md">
+      <h2 class="skill-title" id="WD">Web Development</h2>
+      <img class="BG-img" src="images/WD_BG.png" alt="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="section2-row container col-md">
+      <h2 class="skill-title" id="UID">UI & Visual Design</h2>
+      <img class="BG-img" src="images/WD_BG.png" alt="">
+    </div>
+    <div class="section2-row container col-md">
+      <h2 class="skill-title" id="TD">3D Visualization<br />&<br>More</h2>
+      <img class="BG-img" src="images/GD_BG.png" alt="">
+    </div>
+  </div>
 
 </body>
 

@@ -1,38 +1,129 @@
 body{
+  /* background-color: black; */
+  color: black;
+}
 
-  font-family: 'Lato', sans-serif;
+a {
+  text-decoration: none;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: max(4vw, 36px);
   text-align: center;
   font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-size: max(3vw,32px);
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  /* padding-right: 3vw; */
+  font-size: 32px;
+  color: #A200FF;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+ .skill-title{
+  /* position: absolute;
+  width: auto;
+  height: auto;
+  margin: 50vh auto;
+  padding-left: auto;
+  padding-right: auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section2-row {
+  padding: 0;
+}
+.BG-img {
+  width: 100%;
 }
 
 .heading1 {
   width: auto;
   height: auto;
-  padding: 50px 0;
+  padding: 5vh 0;
+}
+
+.n-box-shadow{
+  box-shadow: 0 8px 20px -4px #C0C0C0;
 }
 
 .section1 {
-
+  padding: 8vh 0;
 }
 
-.container-md {
-
+.n2{
+  margin: 0 4vw;
+  width: auto;
 }
+
+
+.landing-img{
+  width: 40vw;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+/* .navbar-brand {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+
+} */
 
 #this-is {
-  text-align: right;
-  padding-right: 15px;
-}
+    text-align: right;
+    padding-right: 1vw;
+  }
 
 #MR {
+  text-align: center;
+  color: #A200FF;
   font-weight: 700;
 }
 
-#navigation-hint {
-  margin-top: 175px;
-  font-size: 0.5em;
+#nav-MR {
+  padding-top: 1vh;
 }
+
+#TD {
+  line-break: normal;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.navbar-collapse{
+  text-align: center;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: max(1.5vw,20px);
+  font-weight: 400;
+  padding: 8px 0;
+  width: auto;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #808080;
+}
+/* .navbar-logo-centered .navbar-nav .nav-link{
+    padding: .5em 1em;
+} */
