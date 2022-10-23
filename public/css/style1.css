@@ -46,6 +46,10 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
+.section1 {
+  height: 100vh;
+}
+
 .section2-row {
   padding: 0;
 }
