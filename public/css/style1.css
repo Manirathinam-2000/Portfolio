@@ -60,7 +60,7 @@ h3 {
 .heading1 {
   width: auto;
   height: auto;
-  padding: 4vh 0;
+  padding: 3.5vh 0;
 }
 
 .n-box-shadow{
@@ -80,7 +80,7 @@ h3 {
 .landing-img{
   width: 40vw;
   max-width: 600px;
-  min-width: 320px;
+  min-width: 330px;
 }
 
 /* .navbar-brand {
