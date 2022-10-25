@@ -38,6 +38,16 @@ h4{
 footer{
   box-shadow: 0 -8px 20px -4px #4B4B4B;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb {
+background-color: #0E0E0E;
+}
+
 
 .footer {
   height: 200px;
@@ -74,6 +84,12 @@ footer{
 }
 .BG-img {
   width: 100%;
+}
+
+.row1{
+  width: auto;
+  height: 90vh;
+  padding: 3vh 0;
 }
 
 .heading1 {
