@@ -174,6 +174,14 @@ body::-webkit-scrollbar-corner {
 #footer-PW{
   font-weight: 700;
 }
+
+#GD {
+  color: #00C4FF;
+}
+
+#TD {
+  color:#00C4FF;
+}
 /* .navbar-logo-centered .navbar-nav .nav-link{
     padding: .5em 1em;
 } */
