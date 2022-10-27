@@ -68,6 +68,7 @@ body::-webkit-scrollbar-corner {
 }
 
  .skill-title{
+  font-size: max(3vw,32px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -90,7 +91,7 @@ body::-webkit-scrollbar-corner {
   padding: 0;
 }
 .BG-img {
-  width: 100%;
+  width: 100vw;
 }
 
 .row1{
