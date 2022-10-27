@@ -1,5 +1,5 @@
 body{
-  /* background-color: black; */
+  background-color: white;
   color: black;
 }
 
@@ -30,6 +30,7 @@ h3 {
 
 h4{
   font-family: 'Lato', sans-serif;
+  font-size: 20px;
   color: black;
   text-align: center;
 }
@@ -37,18 +38,36 @@ h4{
 footer{
   box-shadow: 0 -8px 20px -4px #C0C0C0;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: white;
+}
+body::-webkit-scrollbar-thumb {
+background-color: grey;
+}
+body::-webkit-scrollbar-corner {
+  background-color: white;
+}
+
+.theme-button {
+  position: absolute;
+  right: 0px;
+}
+
+.footer {
+  height: 200px;
+  padding: 64px 0;
+}
+
+
 .container {
   position: relative;
   text-align: center;
 }
 
  .skill-title{
-  /* position: absolute;
-  width: auto;
-  height: auto;
-  margin: 50vh auto;
-  padding-left: auto;
-  padding-right: auto; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -59,7 +78,12 @@ footer{
   height: 95vh;
 }
 
+.section2 {
+  color: black;
+}
+
 .section3 {
+  color: black;
   margin-bottom: 15px;
 }
 .section2-row {
@@ -67,6 +91,12 @@ footer{
 }
 .BG-img {
   width: 100%;
+}
+
+.row1{
+  width: auto;
+  height: 90vh;
+  padding: 3vh 0;
 }
 
 .heading1 {
@@ -77,10 +107,6 @@ footer{
 
 .n-box-shadow{
   box-shadow: 0 8px 20px -4px #C0C0C0;
-}
-
-.section1 {
-  padding: 8vh 0;
 }
 
 .n2{
@@ -125,8 +151,16 @@ footer{
   display: flex;
 }
 
+.navbar {
+  background-color: white;
+}
+
 .navbar-collapse{
   text-align: center;
+}
+
+.navbar-toggler {
+  background-color: white;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -144,6 +178,16 @@ footer{
 #footer-PW{
   font-weight: 700;
 }
+
+#GD {
+  color: #A200FF;
+}
+
+#TD {
+  color: #A200FF;
+}
+
+
 /* .navbar-logo-centered .navbar-nav .nav-link{
     padding: .5em 1em;
 } */

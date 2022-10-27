@@ -51,6 +51,10 @@ body::-webkit-scrollbar-corner {
   background-color: black;
 }
 
+.theme-button {
+  position: absolute;
+  right: 0px;
+}
 
 .footer {
   height: 200px;
@@ -156,7 +160,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .navbar-toggler {
-  background-color: white;
+  background-color: #585858;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -182,6 +186,8 @@ body::-webkit-scrollbar-corner {
 #TD {
   color:#00C4FF;
 }
+
+
 /* .navbar-logo-centered .navbar-nav .nav-link{
     padding: .5em 1em;
 } */
