@@ -8,23 +8,27 @@ app.use(express.static("public"));
 
 let pageStyle = "style1-light.css";
 let btnTheme = "dark";
+let lndImg = "MR_landing_img_lt.png"
 let c = 0;
 
 app.get("/", function(req,res){
   res.render("home", {
     stylesheetName : pageStyle,
-    btnTheme : btnTheme
+    btnTheme : btnTheme,
+    landingImg: lndImg
   });
 });
 
 app.post("/", function(req,res){
   if(c===0){
     pageStyle = "style1-dark.css";
+    lndImg = "MR_landing_img_dr.png";
     btnTheme = "light";
     c=1;
   }
   else{
     pageStyle = "style1-light.css";
+    lndImg = "MR_landing_img_lt.png";
     btnTheme = "dark";
     c=0;
   }

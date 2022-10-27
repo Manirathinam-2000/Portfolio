@@ -90,7 +90,7 @@ body::-webkit-scrollbar-corner {
   padding: 0;
 }
 .BG-img {
-  width: 100%;
+  width: 100vw;
 }
 
 .row1{
