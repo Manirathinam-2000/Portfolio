@@ -57,7 +57,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 200px;
   padding: 64px 0;
 }
@@ -90,7 +90,7 @@ body::-webkit-scrollbar-corner {
   padding: 0;
 }
 .BG-img {
-  width: 100vw;
+  width: 100%;
 }
 
 .row1{
@@ -153,6 +153,7 @@ body::-webkit-scrollbar-corner {
 
 .navbar {
   background-color: #0E0E0E;
+  width: 100%;
 }
 
 .navbar-collapse{

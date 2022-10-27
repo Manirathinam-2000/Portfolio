@@ -90,7 +90,7 @@ body::-webkit-scrollbar-corner {
   padding: 0;
 }
 .BG-img {
-  width: 100vw;
+  width: 100%;
 }
 
 .row1{
@@ -153,6 +153,7 @@ body::-webkit-scrollbar-corner {
 
 .navbar {
   background-color: white;
+  width: 100%;
 }
 
 .navbar-collapse{
