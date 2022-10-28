@@ -75,6 +75,17 @@ body::-webkit-scrollbar-corner {
   transform: translate(-50%, -50%);
 }
 
+.page-title {
+  line-height: max(10vh, 50px);
+  font-size: max(3vw,30px);
+  width: 100%;
+}
+
+.Title {
+  width: 100vw;
+  height: 95vh;
+}
+
 .section1 {
   height: 95vh;
 }
@@ -93,11 +104,10 @@ body::-webkit-scrollbar-corner {
 .BG-img {
   margin: 0;
   width: 100%;
-  overflow-x: hidden;
 }
 
 .row {
-  width: 100vw;
+  width: 100%;
 }
 
 .row1{
@@ -177,12 +187,13 @@ body::-webkit-scrollbar-corner {
   color: white;
   font-size: max(1.5vw,20px);
   font-weight: 400;
-  padding: 8px 0;
+  padding: 12px 0;
   width: auto;
 }
 .navbar .navbar-nav .nav-link:hover{
     color: #808080;
 }
+
 
 #footer-PW{
   font-weight: 700;

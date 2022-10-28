@@ -34,21 +34,27 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mx-auto">
           <div class="">
-            <a class="nav-link" href="#">Web Development</a>
+            <a class="nav-link" href="/Web-Development" id="Web-Development">Web Development</a>
           </div>
           <div class="n2">
-            <a class="nav-link" href="#">Graphic Design</a>
+            <a class="nav-link" href="/Graphic-Design" id= "Graphic-Design">Graphic Design</a>
           </div>
-          <a class="d-none d-md-block" id="nav-MR" href="#">
+          <a class="d-none d-md-block" id="nav-MR" href="/">
             <h3>MR</h3>
           </a>
           <div class="n2">
-            <a class="nav-link" href="#">UI & Visual Deisgn</a>
+            <a class="nav-link" href="/UI-Visual-Design">UI & Visual Deisgn</a>
           </div>
           <div class="">
-            <a class="nav-link" href="#">3D & More</a>
+            <a class="nav-link" href="/TD-&-More">3D & More</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
+
+<!-- Theme toggle button -->
+
+  <form class="theme-toggle-button-form" action="/<%= actionUrl %>" method="post">
+    <button type="submit" name="theme-toggle" class="theme-button btn btn-<%= btnTheme %>">Change Theme</button>
+  </form>
