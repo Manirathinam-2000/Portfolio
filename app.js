@@ -18,6 +18,7 @@ let lndImg = "MR_landing_img_lt.png";
 let c = 0;
 
 app.get("/", function(req,res){
+  aURL = "";
   res.render("home", {
     stylesheetName : pageStyle,
     btnTheme : btnTheme,

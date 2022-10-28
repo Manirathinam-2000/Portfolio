@@ -52,8 +52,11 @@ body::-webkit-scrollbar-corner {
 }
 
 .theme-button {
-  position: absolute;
+  display: block;
+  position: relative;
   right: 0px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .footer {
@@ -77,14 +80,15 @@ body::-webkit-scrollbar-corner {
 }
 
 .page-title {
+  color:  #A200FF;
   line-height: max(10vh, 50px);
-  font-size: max(3vw,30px);
+  font-size: max(4vw,30px);
   width: 100%;
 }
 
 .Title {
   width: 100vw;
-  height: 95vh;
+  height: 90vh;
 }
 
 .section1 {
