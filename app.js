@@ -35,6 +35,16 @@ app.get("/:customPageURL", function(req,res){
     landingImg: lndImg
   });
 });
+// app.get("/Graphic-Design/:customPageURL", function(req,res){
+//   aURL = _.replace(url.parse(req.url).pathname,"/","");
+//   res.render(aURL, {
+//     stylesheetName : pageStyle,
+//     btnTheme : btnTheme,
+//     actionUrl: aURL,
+//     landingImg: lndImg
+//   });
+//   console.log("new Get working");
+// });
 app.post("/", function(req,res){
   if(c===0){
     pageStyle = "style1-dark.css";
