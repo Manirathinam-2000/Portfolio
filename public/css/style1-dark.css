@@ -250,6 +250,18 @@ body::-webkit-scrollbar-corner {
   background-color: #585858;
 }
 
+.navbar-toggler-icon {
+  background-image: url("collapsible-btn.svg")
+}
+
+.navbar-toggler-icon:hover{
+  background-image: url("collapsible-btn-hover.svg")
+}
+
+/* .navbar-toggler-icon:to {
+  background-image: url("images/collapsible-btn.svg")
+} */
+
 .navbar .navbar-nav .nav-link {
   font-family: 'Lato', sans-serif;
   color: white;

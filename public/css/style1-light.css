@@ -253,7 +253,16 @@ body::-webkit-scrollbar-corner {
 }
 
 .navbar-toggler {
-  background-color: white;
+  background-color: none;
+  border-color: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/collapsible-btn.svg");
+}
+
+.navbar-toggler-icon:hover{
+  background-image: url("../images/toggle.svg");
 }
 
 .navbar .navbar-nav .nav-link {

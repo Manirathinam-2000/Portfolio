@@ -1,9 +1,14 @@
 const express = require("express");
+const jsdom = require("jsdom");
+const fs = require("fs");
 const bodyParser = require("body-parser");
 const _ = require("lodash");
 const http = require("http");
 const url = require("url");
 const app = express();
+
+const dom = new jsdom.JSDOM(fs.readFileSync('views/Logo.ejs'));
+const $ = require("jquery")(dom.window);
 
 app.set("view engine", ".ejs");
 app.use(bodyParser.urlencoded({
@@ -15,6 +20,7 @@ let aURL = "";
 let pageStyle = "style1-light.css";
 let btnTheme = "dark";
 let lndImg = "MR_landing_img_lt.png";
+let logoName = "";
 let c = 0;
 
 app.get("/", function(req,res){
@@ -28,11 +34,13 @@ app.get("/", function(req,res){
 });
 app.get("/:customPageURL", function(req,res){
   aURL = _.replace(url.parse(req.url).pathname,"/","");
+  logoName = req.query.id;
   res.render(aURL, {
     stylesheetName : pageStyle,
     btnTheme : btnTheme,
     actionUrl: aURL,
-    landingImg: lndImg
+    landingImg: lndImg,
+    logoName: logoName
   });
 });
 // app.get("/Graphic-Design/:customPageURL", function(req,res){
@@ -62,6 +70,7 @@ app.post("/", function(req,res){
 })
 
 app.post("/:customPageURL", function(req,res){
+
   if(c===0){
     pageStyle = "style1-dark.css";
     lndImg = "MR_landing_img_dr.png";
@@ -74,7 +83,8 @@ app.post("/:customPageURL", function(req,res){
     btnTheme = "dark";
     c=0;
   }
-  res.redirect(url.parse(req.url).pathname);
+
+  res.redirect(url.parse(req.url).pathname + "?id=" + logoName);
 })
 let port = process.env.PORT;
 if (port == null || port == "") {
