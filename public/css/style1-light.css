@@ -164,7 +164,7 @@ body::-webkit-scrollbar-corner {
 
 .Logo {
   width: 100vw;
-  height: 50vh;
+  height: max(250px,50vw);
 }
 
 .Logo-Thumbnail {
