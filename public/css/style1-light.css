@@ -53,6 +53,14 @@ body::-webkit-scrollbar-corner {
   background-color: white;
 }
 
+.maintenance {
+  font-size: max(2vw,20px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .theme-button {
   display: block;
   position: relative;
