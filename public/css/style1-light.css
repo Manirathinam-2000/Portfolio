@@ -257,13 +257,13 @@ body::-webkit-scrollbar-corner {
   border-color: none;
 }
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
   background-image: url("../images/collapsible-btn.svg");
 }
 
 .navbar-toggler-icon:hover{
   background-image: url("../images/toggle.svg");
-}
+} */
 
 .navbar .navbar-nav .nav-link {
   font-family: 'Lato', sans-serif;

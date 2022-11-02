@@ -153,7 +153,7 @@ body::-webkit-scrollbar-corner {
 
 .Logo {
   width: 100vw;
-  height: 50vh;
+  height: max(250px,50vw);
 }
 
 .Logo-Thumbnail {
@@ -250,13 +250,13 @@ body::-webkit-scrollbar-corner {
   background-color: #585858;
 }
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
   background-image: url("collapsible-btn.svg")
 }
 
 .navbar-toggler-icon:hover{
   background-image: url("collapsible-btn-hover.svg")
-}
+} */
 
 /* .navbar-toggler-icon:to {
   background-image: url("images/collapsible-btn.svg")
