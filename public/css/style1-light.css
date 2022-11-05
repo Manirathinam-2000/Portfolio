@@ -53,6 +53,38 @@ body::-webkit-scrollbar-corner {
   background-color: white;
 }
 
+
+
+.BC-row{
+  padding: 0 15vw;
+  margin: 0;
+}
+.img-shadow {
+  box-shadow: 0 8px 20px -4px #C0C0C0;
+}
+.preview-v {
+  height: 15vw;
+  margin: 10px;
+}
+
+.preview-h {
+  width: 20vw;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 760px) {
+  .preview-v {
+    height: 250px;
+
+  }
+
+  .preview-h {
+    width: 250px;
+
+  }
+}
+
+
 .maintenance {
   font-size: max(2vw,20px);
   position: absolute;
@@ -197,14 +229,17 @@ body::-webkit-scrollbar-corner {
   width: 70%;
 }
 
+.Logo-row {
+  padding: 0 15vw;
+}
 
 .Logo-col {
-  width: 20vw;
+  width: 22vw;
 }
 
 @media only screen and (max-width: 600px) {
   .Logo-col {
-    width: 50vw;
+    width: 30vw;
   }
 }
 
@@ -213,12 +248,9 @@ body::-webkit-scrollbar-corner {
   height: auto;
 }
 
-/* .navbar-brand {
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
-
-} */
+.nav-logo {
+  padding-top: 1vw;
+}
 
 #this-is {
     text-align: right;
@@ -232,7 +264,7 @@ body::-webkit-scrollbar-corner {
 }
 
 #nav-MR {
-  padding-top: 1vh;
+  padding-top: 0.5vw;
 }
 
 #TD {

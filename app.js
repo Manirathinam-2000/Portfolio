@@ -22,7 +22,8 @@ let btnTheme = "dark";
 let lndImg = "MR_landing_img_lt.png";
 let logoName = "";
 let c = 0;
-
+let g = 0;
+let gArr = [];
 app.get("/", function(req,res){
   aURL = "";
   res.render("home", {
@@ -32,6 +33,26 @@ app.get("/", function(req,res){
     landingImg: lndImg
   });
 });
+
+app.get("/Gallery", function(req,res){
+  aURL = _.replace(url.parse(req.url).pathname,"/","");
+  logoName = parseInt(req.query.id);
+  console.log(logoName);
+  gArr=[];
+  for(let i = 1; i<= logoName ; i++){
+    gArr.push(i);
+  }
+  console.log(gArr);
+  res.render(aURL, {
+    stylesheetName : pageStyle,
+    btnTheme : btnTheme,
+    actionUrl: aURL,
+    landingImg: lndImg,
+    gArr: gArr
+
+  });
+});
+
 app.get("/:customPageURL", function(req,res){
   aURL = _.replace(url.parse(req.url).pathname,"/","");
   logoName = req.query.id;
@@ -43,6 +64,8 @@ app.get("/:customPageURL", function(req,res){
     logoName: logoName
   });
 });
+
+
 // app.get("/Graphic-Design/:customPageURL", function(req,res){
 //   aURL = _.replace(url.parse(req.url).pathname,"/","");
 //   res.render(aURL, {
@@ -86,6 +109,9 @@ app.post("/:customPageURL", function(req,res){
 
   res.redirect(url.parse(req.url).pathname + "?id=" + logoName);
 })
+
+
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
