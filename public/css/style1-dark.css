@@ -54,7 +54,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .BC-row{
-  padding: 0 15vw;
+  padding: 0 10vw;
   margin: 0;
 }
 
@@ -78,8 +78,12 @@ body::-webkit-scrollbar-corner {
 }
 
 @media only screen and (max-width: 760px) {
+  .BC-row{
+    padding: 0 10vw;
+    margin: 0;
+  }
   .preview {
-    width: 300px;
+    width: 250px;
     margin: 10px;
   }
   .preview-v {
