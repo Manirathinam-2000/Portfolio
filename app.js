@@ -21,16 +21,25 @@ let pageStyle = "style1-light.css";
 let btnTheme = "dark";
 let lndImg = "MR_landing_img_lt.png";
 let logoName = "";
+let imgBGTheme = "light";
 let c = 0;
 let g = 0;
 let gArr = [];
+
 app.get("/", function(req,res){
   aURL = "";
+  if(btnTheme === "dark"){
+    imgBGTheme = "light";
+  }
+  else{
+    imgBGTheme = "dark";
+  }
   res.render("home", {
     stylesheetName : pageStyle,
     btnTheme : btnTheme,
     actionUrl: aURL,
-    landingImg: lndImg
+    landingImg: lndImg,
+    imgBGTheme: imgBGTheme
   });
 });
 

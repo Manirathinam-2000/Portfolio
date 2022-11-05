@@ -37,6 +37,7 @@ h4{
 }
 
 footer{
+  width: 100vw;
   /* box-shadow: 0 -8px 20px -4px #C0C0C0; */
 }
 body::-webkit-scrollbar {
