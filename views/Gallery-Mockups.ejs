@@ -1,0 +1,11 @@
+<%- include("header1.ejs") -%>
+
+    <div class="BC-row row">
+    <div class="BC-col text-center">
+          <% gArr.forEach(function(gal){%>
+            <img class="img-shadow preview rounded" src="images/Printables/BC/BCM<%=gal%>.jpg" alt="">
+          <%});%>
+    </div>
+    </div>
+
+<%- include("footer1.ejs") -%>

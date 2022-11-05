@@ -34,15 +34,30 @@ app.get("/", function(req,res){
   });
 });
 
-app.get("/Gallery", function(req,res){
+app.get("/Gallery-Designs", function(req,res){
   aURL = _.replace(url.parse(req.url).pathname,"/","");
   logoName = parseInt(req.query.id);
-  console.log(logoName);
   gArr=[];
   for(let i = 1; i<= logoName ; i++){
     gArr.push(i);
   }
-  console.log(gArr);
+  res.render(aURL, {
+    stylesheetName : pageStyle,
+    btnTheme : btnTheme,
+    actionUrl: aURL,
+    landingImg: lndImg,
+    gArr: gArr
+
+  });
+});
+
+app.get("/Gallery-Mockups", function(req,res){
+  aURL = _.replace(url.parse(req.url).pathname,"/","");
+  logoName = parseInt(req.query.id);
+  gArr=[];
+  for(let i = 1; i<= logoName ; i++){
+    gArr.push(i);
+  }
   res.render(aURL, {
     stylesheetName : pageStyle,
     btnTheme : btnTheme,
