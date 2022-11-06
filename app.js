@@ -7,7 +7,7 @@ const http = require("http");
 const url = require("url");
 const app = express();
 
-const dom = new jsdom.JSDOM(fs.readFileSync('views/Logo.ejs'));
+const dom = new jsdom.JSDOM(fs.readFileSync('views/header1.ejs'));
 const $ = require("jquery")(dom.window);
 
 app.set("view engine", ".ejs");
@@ -27,6 +27,7 @@ let g = 0;
 let gArr = [];
 
 app.get("/", function(req,res){
+  // console.log($(".theme-button").scrollTop());
   aURL = "";
   if(btnTheme === "dark"){
     imgBGTheme = "light";
@@ -132,6 +133,25 @@ app.post("/:customPageURL", function(req,res){
   }
 
   res.redirect(url.parse(req.url).pathname + "?id=" + logoName);
+})
+
+// $(".scroll-to-top").css("width","50vw");
+//
+// $(".scroll-to-top").on("click", function(){
+//   console.log($(dom.window).scrollTop());
+//   $(dom.window).scrollTop(0);
+// })
+
+let t = 0;
+$("#scroll-to-top-btn").on("click", function(){
+  if(t===0){
+    $(".scroll-to-top").attr("src","images/scroll-to-top-B.png");
+    t=1;
+  }
+  else{
+    $(".scroll-to-top").attr("src","images/scroll-to-top-W.png");
+    t=0;
+  }
 })
 
 

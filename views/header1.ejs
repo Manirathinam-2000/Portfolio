@@ -17,6 +17,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
   <link rel="stylesheet" href="css/<%= stylesheetName %>">
 
 </head>
@@ -39,7 +42,7 @@
             <a class="nav-link" href="/Web-Development" id="Web-Development">Web Development</a>
           </div>
           <div class="n2">
-            <a class="nav-link" href="/Graphic-Design" id= "Graphic-Design">Graphic Design</a>
+            <a class="nav-link" href="/Graphic-Design" id="Graphic-Design">Graphic Design</a>
           </div>
           <a class="d-none d-md-block" id="nav-MR" href="/">
             <h3>MR</h3>
@@ -55,8 +58,30 @@
     </div>
   </nav>
 
-<!-- Theme toggle button -->
+  <!-- Theme toggle button -->
 
   <form class="theme-toggle-button-form" action="/<%= actionUrl %>" method="post">
     <button type="submit" name="theme-toggle" class="theme-button btn btn-<%= btnTheme %>">Change Theme</button>
   </form>
+
+  <img class="scroll-to-top" onclick="scrollToTop()" id="scroll-to-top-btn" src="images/scroll-to-top-<%= btnTheme %>.png" alt="Scroll to top">
+
+  <script>
+    window.onscroll = function() {
+      console.log($(window).scrollTop());
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if ($(window).scrollTop() > 100) {
+        $("#scroll-to-top-btn").css("display","block");
+      } else {
+        $("#scroll-to-top-btn").css("display","none");
+      }
+    }
+
+    function scrollToTop() {
+      $(window).scrollTop(0);
+      document.body.scrollTop = 0;
+    }
+  </script>

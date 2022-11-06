@@ -37,7 +37,6 @@ h4{
 }
 
 footer{
-  width: 100vw;
   /* box-shadow: 0 -8px 20px -4px #C0C0C0; */
 }
 body::-webkit-scrollbar {
@@ -119,7 +118,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 200px;
   padding: 64px 0;
 }
@@ -292,6 +291,17 @@ body::-webkit-scrollbar-corner {
   display: flex;
 } */
 
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: 20px;
+  width: max(50px,5vw);
+  margin-left: auto;
+  margin-right: 0;
+  transform: translateY(70vh);
+}
+
 .col-lg-6 {
   padding: 0;
 }
@@ -302,7 +312,7 @@ body::-webkit-scrollbar-corner {
 
 .navbar {
   background-color: white;
-  width: 100vw;
+  width: 100%;
 }
 
 .navbar-collapse{
