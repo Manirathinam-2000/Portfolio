@@ -24,6 +24,8 @@ let logoName = "";
 let imgBGTheme = "light";
 let c = 0;
 let g = 0;
+let gCat = "";
+let gFor = "";
 let gArr = [];
 
 app.get("/", function(req,res){
@@ -61,9 +63,11 @@ app.get("/Gallery-Designs", function(req,res){
   });
 });
 
-app.get("/Gallery-Mockups", function(req,res){
+app.get("/Gallery", function(req,res){
   aURL = _.replace(url.parse(req.url).pathname,"/","");
   logoName = parseInt(req.query.id);
+  gCat = req.query.name;
+  gFor = req.query.format;
   gArr=[];
   for(let i = 1; i<= logoName ; i++){
     gArr.push(i);
@@ -73,7 +77,9 @@ app.get("/Gallery-Mockups", function(req,res){
     btnTheme : btnTheme,
     actionUrl: aURL,
     landingImg: lndImg,
-    gArr: gArr
+    gArr: gArr,
+    galC: gCat,
+    gFormat: gFor
 
   });
 });
@@ -132,7 +138,7 @@ app.post("/:customPageURL", function(req,res){
     c=0;
   }
 
-  res.redirect(url.parse(req.url).pathname + "?id=" + logoName);
+  res.redirect(url.parse(req.url).pathname + "?id=" + logoName + "&name=" + gCat + "&format=" + gFor);
 })
 
 // $(".scroll-to-top").css("width","50vw");
