@@ -274,6 +274,16 @@ body::-webkit-scrollbar-corner {
 
 #TD {
   line-break: normal;
+  color:#00C4FF;
+}
+
+#printTitle{
+   font-size: max(3vw,36px);
+   padding: 5vw 0;
+}
+
+#subtitle {
+  padding: 4vw;
 }
 
 /* .flex-container {
@@ -288,7 +298,7 @@ body::-webkit-scrollbar-corner {
   width: max(50px,5vw);
   margin-left: auto;
   margin-right: 0;
-  transform: translateY(70vh);
+  transform: translateY(60vh);
 }
 
 .col-lg-6 {
@@ -346,11 +356,30 @@ body::-webkit-scrollbar-corner {
   color: #00C4FF;
 }
 
-#TD {
-  color:#00C4FF;
+.color {
+  color: #00C4FF;
 }
-
 
 /* .navbar-logo-centered .navbar-nav .nav-link{
     padding: .5em 1em;
 } */
+
+
+
+#uiWeb{
+    display: block;
+}
+#uiMobile{
+  display: none;
+}
+
+@media only screen and (max-device-width: 500px){
+
+  #uiWeb{
+      display: none;
+  }
+  #uiMobile{
+    display: block;
+  }
+
+}
