@@ -357,6 +357,8 @@ body::-webkit-scrollbar-corner {
 
 
 #footer-PW{
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -375,10 +377,24 @@ body::-webkit-scrollbar-corner {
 
 #uiWeb{
     display: block;
+    width: 100%;
+    height: 100%;
 }
 #uiMobile{
   display: none;
+  width: 100%;
+  height: 100%;
 }
+
+#Div-BG {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+ #section-bg{
+   padding: 2.5vw;
+ }
 
 @media only screen and (max-device-width: 500px){
 
@@ -389,10 +405,4 @@ body::-webkit-scrollbar-corner {
     display: block;
   }
 
-}
-
-#Div-BG {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
 }
