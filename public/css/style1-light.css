@@ -221,7 +221,7 @@ body::-webkit-scrollbar-corner {
 
 .Logo {
   width: 100%;
-  height: max(250px,50vh);
+  height: max(250px,30vw);
 }
 
 .Logo-Thumbnail {
@@ -404,6 +404,13 @@ body::-webkit-scrollbar-corner {
   }
   #uiMobile{
     display: block;
+  }
+
+  #printTitle{
+     padding: 12vw 5vw 0;
+  }
+  .gal-row{
+    padding-top: 10vw;
   }
 
 }
