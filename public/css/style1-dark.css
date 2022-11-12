@@ -410,6 +410,6 @@ body::-webkit-scrollbar-corner {
 }
 
 .view-code-btn {
-  width: max(100px,40vw);
+  width: max(250px,50vw);
   padding: 10vw;
 }
