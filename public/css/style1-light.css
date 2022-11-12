@@ -414,3 +414,17 @@ body::-webkit-scrollbar-corner {
   }
 
 }
+
+.WD-img {
+  padding-top:10vw;
+  width: 90vw;
+}
+
+.WD{
+  text-align: center;
+}
+
+.view-code-btn {
+  width: max(100px,40vw);
+  padding: 10vw;
+}

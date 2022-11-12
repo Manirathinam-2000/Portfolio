@@ -399,3 +399,12 @@ body::-webkit-scrollbar-corner {
   height: 100%;
   opacity: 0;
 }
+
+.WD-img {
+  padding: 10vw 0;
+  width: 90vw;
+}
+
+.WD{
+  text-align: center;
+}
