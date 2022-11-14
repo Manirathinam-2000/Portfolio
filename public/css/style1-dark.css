@@ -413,3 +413,7 @@ body::-webkit-scrollbar-corner {
   width: max(250px,50vw);
   padding: 10vw;
 }
+
+.about-text{
+  font-size: max(2.5vw,20px);
+}
