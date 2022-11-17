@@ -24,6 +24,7 @@ let logoName = "";
 let imgBGTheme = "light";
 let c = 0;
 let g = 0;
+let sec = "";
 let gCat = "";
 let gFor = "";
 let gArr = [];
@@ -68,6 +69,7 @@ app.get("/Gallery", function(req,res){
   logoName = parseInt(req.query.id);
   gCat = req.query.name;
   gFor = req.query.format;
+  sec = req.query.sec;
   gArr=[];
   for(let i = 1; i<= logoName ; i++){
     gArr.push(i);
@@ -79,7 +81,8 @@ app.get("/Gallery", function(req,res){
     landingImg: lndImg,
     gArr: gArr,
     galC: gCat,
-    gFormat: gFor
+    gFormat: gFor,
+    sec: sec
 
   });
 });
@@ -138,7 +141,7 @@ app.post("/:customPageURL", function(req,res){
     c=0;
   }
 
-  res.redirect(url.parse(req.url).pathname + "?id=" + logoName + "&name=" + gCat + "&format=" + gFor);
+  res.redirect(url.parse(req.url).pathname + "?id=" + logoName + "&name=" + gCat + "&format=" + gFor + "&sec=" + sec);
 })
 
 // $(".scroll-to-top").css("width","50vw");

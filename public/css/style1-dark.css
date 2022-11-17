@@ -391,6 +391,15 @@ body::-webkit-scrollbar-corner {
   #uiMobile{
     display: block;
   }
+  #printTitle{
+     padding: 12vw 5vw 0;
+  }
+  .gal-row{
+    padding-top: 10vw;
+  }
+  #section-bg{
+    padding: 6vw;
+  }
 
 }
 
@@ -416,4 +425,9 @@ body::-webkit-scrollbar-corner {
 
 .about-text{
   font-size: max(2.5vw,20px);
+}
+
+.D-preview {
+  width: max(250px,20vw);
+  margin: 20px;
 }
